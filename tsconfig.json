@@ -24,6 +24,12 @@
       ],
       "@pages/*": [
         "pages/*"
+      ],
+      "@/types": [
+        "types/index"
+      ],
+      "@/types/*": [
+        "types/*"
       ]
     }
   },
