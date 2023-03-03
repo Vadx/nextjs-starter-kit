@@ -1,8 +1,11 @@
 
 import { WithChildren } from "@/types/common";
+import cx from "classnames";
+import { inter } from "@/styles/fonts";
 import Head from "next/head";
 import Footer from "./Footer";
 import Header from "./Header";
+
 
 interface LayoutProps extends WithChildren {
   siteId?: string;
@@ -14,7 +17,7 @@ const Layout = ({ siteId, children }: LayoutProps) => {
   const logo = "/favicon.ico";
 
   return (
-    <>
+    <div  className={cx(inter)}>
       <Head>
           <title>{title}</title>
           <link rel="icon" href={logo} />
@@ -43,10 +46,15 @@ const Layout = ({ siteId, children }: LayoutProps) => {
       </Head>
       <div>
         <Header />
-        <div className="pt-28">{children}</div>
+        <section
+          className="section">
+            <div className="section--content">
+              {children}
+            </div>
+        </section>
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
  

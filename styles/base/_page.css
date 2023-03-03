@@ -13,6 +13,6 @@ body {
   @apply relative px-16 py-48 sm:p-32 md:py-64 lg:py-80 border-b;
 
   &--content {
-    @apply mx-auto;
+    @apply mx-auto md:max-w-2xl lg:max-w-4xl;
   }
 }
