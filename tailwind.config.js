@@ -2,7 +2,7 @@ module.exports = {
   corePlugins: {
     preflight: false,
   },
-  content: ['./components/**/*.js', './lib/**/*.js', './pages/**/*.js'],
+  content: ['./components/**/*.tsx', './lib/**/*.tsx', './pages/**/*.tsx'],
   safelist: [
     {
       pattern: /grid-cols-/,

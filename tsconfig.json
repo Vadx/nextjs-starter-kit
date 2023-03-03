@@ -16,13 +16,13 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@lib/*": [
+      "@/lib/*": [
         "lib/*"
       ],
-      "@components/*": [
+      "@/components/*": [
         "components/*"
       ],
-      "@pages/*": [
+      "@/pages/*": [
         "pages/*"
       ],
       "@/types": [
@@ -30,8 +30,11 @@
       ],
       "@/types/*": [
         "types/*"
+      ],
+      "@/styles/*": [
+        "styles/*"
       ]
-    }
+,    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "tailwind.config.js"],
   "exclude": ["node_modules"]
