@@ -9,10 +9,14 @@ body {
   @apply flex flex-col;
 }
 
+.container {
+  @apply flex max-w-screen-lg mx-auto sm:px-6 lg:px-10
+}
+
 .section {
-  @apply relative px-16 py-48 sm:p-32 md:py-64 lg:py-80 border-b;
+  @apply relative sm:py-20 md:py-30 lg:py-60;
 
   &--content {
-    @apply mx-auto md:max-w-2xl lg:max-w-4xl;
+    @apply md:my-32 lg:my-20;
   }
 }

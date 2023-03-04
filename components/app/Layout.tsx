@@ -46,12 +46,11 @@ const Layout = ({ siteId, children }: LayoutProps) => {
       </Head>
       <div>
         <Header />
-        <section
-          className="section">
-            <div className="section--content">
-              {children}
-            </div>
-        </section>
+        <div className="container">
+          <section className="section">
+            {children}
+          </section>
+        </div>
         <Footer />
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 @layer base {
   html {
-    @apply bg-pageText text-[16px];
+    @apply bg-pageText text-[14px];
   }
 
   html,
@@ -22,7 +22,7 @@
   }
 
   p {
-    @apply m-0 text-16 leading-150;
+    @apply m-0 text-14 leading-120;
   }
 
   strong {
@@ -59,7 +59,7 @@
   }
 
   h6 {
-    @apply m-0 text-12 font-normal leading-125;
+    @apply m-0 text-14 font-normal leading-125;
   }
 
   /* Links */

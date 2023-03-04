@@ -1,28 +1,8 @@
 .header {
   @apply sticky top-0 inset-x-0 z-5;
 
-  &--content {
-    @apply flex flex-col items-center relative z-3;
-  }
-
-  &--border {
-    @apply absolute inset-x-0 bottom-0 z-2 border-t;
-    transition: opacity 0s .6s linear;
-
-    .is-overlay:not(.has-bg) & {
-      transition-duration: .4s;
-      transition-delay: 0s;
-    }
-
-    .is-white & {
-      @apply border-white;
-      transition-delay: 0s;
-    }
-
-    &.is-hidden {
-      @apply opacity-0;
-      transition-delay: 0s;
-    }
+  &--inner {
+    @apply flex h-42 max-w-screen-xl items-center justify-between;
   }
 }
 
