@@ -10,11 +10,12 @@ body {
 }
 
 .container {
-  @apply flex max-w-screen-lg mx-auto sm:px-6 lg:px-10
+  @apply max-w-screen-lg mx-auto sm:px-6 lg:px-10
 }
 
 .section {
   @apply relative sm:py-20 md:py-30 lg:py-60;
+  width: 100%;
 
   &--content {
     @apply md:my-32 lg:my-20;

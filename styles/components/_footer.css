@@ -1,7 +1,16 @@
 .footer {
   @apply relative overflow-hidden;
   
-  &--grid {
-    @apply grid sm:grid-cols-2 lg:grid-cols-4 gap-1;
+  &--inner {
+    /* @apply grid sm:grid-cols-2 lg:grid-cols-4 gap-1; */
+    @apply flex flex-col items-center;
+  }
+
+  nav {
+    @apply flex flex-row gap-20;
+
+    a {
+      @apply font-semibold
+    }
   }
 }

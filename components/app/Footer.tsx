@@ -8,10 +8,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="mt-6 sm:mb-0 sm:flex">
+        <div className="footer--inner">
           <p>Copyright © 2023</p>
-          <Link href='/'>Theme Policy</Link>
-          <Link href='/about'>About</Link>
+          <nav>
+            <Link href='/'>Theme Policy</Link>
+            <Link href='/about'>About</Link>
+          </nav>
         </div>
       </div>
     </footer>

@@ -4,6 +4,13 @@
   &--inner {
     @apply flex h-42 max-w-screen-xl items-center justify-between;
   }
+
+  nav {
+
+    a {
+      @apply ml-20;
+    }
+  }
 }
 
 .logo {

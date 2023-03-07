@@ -4,7 +4,7 @@ import { WithChildren } from '@/types/common'
 
 interface SwatchProps extends WithChildren {
   label: string,
-  color: string
+  color: string,
 }
 
 const Swatch = ({ label, color, children }: SwatchProps) => {
@@ -15,10 +15,8 @@ const Swatch = ({ label, color, children }: SwatchProps) => {
       className="swatch"
       aria-label={label}
       style={{
-        '--swatchColor': color?.hex,
-        '--swatchBorder': color?.hex
-          ? contrastColor({ bgColor: color?.hex })
-          : null,
+        // '--swatchColor': color,
+        // '--swatchBorder': color ? contrastColor({ bgColor: color?.hex }) : null
       }}
     >
       {children}

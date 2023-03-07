@@ -5,19 +5,41 @@ import { inter } from "@/styles/fonts";
 import Head from "next/head";
 import Footer from "./Footer";
 import Header from "./Header";
+import { m } from "framer-motion";
+import { pageTransitionSpeed } from '@/lib/animate'
+
+const pageTransitionAnim = {
+  show: {
+    opacity: 1,
+    transition: {
+      duration: pageTransitionSpeed / 1000,
+      delay: 0.2,
+      ease: 'linear',
+      when: 'beforeChildren',
+    },
+  },
+  hide: {
+    opacity: 0,
+    transition: {
+      duration: pageTransitionSpeed / 1000,
+      ease: 'linear',
+      when: 'beforeChildren',
+    },
+  },
+}
 
 
 interface LayoutProps extends WithChildren {
-  siteId?: string;
+  pageId?: string;
 }
  
-const Layout = ({ siteId, children }: LayoutProps) => {
+const Layout = ({ pageId, children }: LayoutProps) => {
   const title = "Nextjs Starter Kit";
   const description = "A template for site builders with NextJS, TypeScript, TailwindCSS";
   const logo = "/favicon.ico";
 
   return (
-    <div  className={cx(inter)}>
+    <div className={cx(inter)}>
       <Head>
           <title>{title}</title>
           <link rel="icon" href={logo} />
@@ -44,15 +66,21 @@ const Layout = ({ siteId, children }: LayoutProps) => {
           <meta name="twitter:description" content={description} />
           <meta name="twitter:image" content={logo} />
       </Head>
-      <div>
+      <m.div
+        // key={pageId}
+        // initial="hide"
+        // animate="show"
+        // exit="hide"
+        // variants={pageTransitionAnim}
+      >
         <Header />
-        <div className="container">
+        <main className="container">
           <section className="section">
             {children}
           </section>
-        </div>
+        </main>
         <Footer />
-      </div>
+      </m.div>
     </div>
   );
 }

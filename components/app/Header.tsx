@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 interface HeaderProps {
   
@@ -9,18 +10,20 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="header--inner">
-          <Link href='/'  className="logo">Logo</Link>
-          <div>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link href='/'  className="logo">
+            <Logo logoSize={22} logoColor='#2e2e2e'>Logo</Logo>
+          </Link>
+          <nav>
+            <Link href="/" className="text-sm font-semibold leading-6 text-gray-900">
               Home
-            </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            </Link>
+            <Link href="/about" className="text-sm font-semibold leading-6 text-gray-900">
               About
-            </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+            </Link>
+            <Link href="/components" className="text-sm font-semibold leading-6 text-gray-900">
               Components
-            </a>
-          </div>
+            </Link>
+          </nav>
         </div>
       </div>
     </header>
