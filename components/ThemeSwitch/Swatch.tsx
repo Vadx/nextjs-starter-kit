@@ -1,27 +1,29 @@
-import React from 'react'
-import { contrastColor } from 'contrast-color'
-import { WithChildren } from '@/types/common'
+import React from "react";
+import { contrastColor } from "contrast-color";
+import { WithChildren } from "@/types/common";
 
 interface SwatchProps extends WithChildren {
-  label: string,
-  color: string,
+  label: string;
+  color: string;
 }
 
 const Swatch = ({ label, color, children }: SwatchProps) => {
-  if (!color) return null
+  if (!color) return null;
 
   return (
     <div
       className="swatch"
       aria-label={label}
-      style={{
-        // '--swatchColor': color,
-        // '--swatchBorder': color ? contrastColor({ bgColor: color?.hex }) : null
-      }}
+      style={
+        {
+          // '--swatchColor': color,
+          // '--swatchBorder': color ? contrastColor({ bgColor: color?.hex }) : null
+        }
+      }
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default Swatch
+export default Swatch;

@@ -13,7 +13,7 @@
   --pageText-hsl: 0, 0%, 0%;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --pageBG: #000000;
   --pageText: #f4f4f0;
 
@@ -21,7 +21,7 @@
   --pageText-hsl: 60, 14%, 95%;
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   --pageBG: #ffffff;
   --pageText: #000000;
 

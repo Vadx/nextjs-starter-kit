@@ -11,7 +11,7 @@ const Logo = ({ logoSize, logoColor, children }: LogoProps) => {
       className="font-semibold"
       style={{
         fontSize: logoSize ? logoSize : 16,
-        color: logoColor ? logoColor : '#000'
+        color: logoColor ? logoColor : "#000",
       }}
     >
       💎 {children}

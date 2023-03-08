@@ -1,5 +1,5 @@
-import Layout from '@/components/app/Layout'
-import Head from 'next/head'
+import Layout from "@/components/app/Layout";
+import Head from "next/head";
 
 export default function About() {
   return (
@@ -10,9 +10,7 @@ export default function About() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        About
-      </main>
+      <main>About</main>
     </Layout>
-  )
+  );
 }

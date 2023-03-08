@@ -11,7 +11,7 @@
 
   .swatch {
     @apply border;
-    
+
     &::before {
       @apply opacity-0;
     }
@@ -21,7 +21,7 @@
 .swatch {
   @apply relative p-0 block rounded-full w-20 h-20;
   background-color: var(--swatchColor);
-    
+
   /* ring */
   &::before {
     @apply absolute inset-0 rounded-full opacity-10 border;
@@ -48,7 +48,18 @@
 
     .is-soldout & {
       @apply -inset-1 opacity-100 border-transparent;
-      background: linear-gradient(45deg,transparent calc(50% - 1px),var(--pageText),transparent calc(50% + 1px)), linear-gradient(-45deg,transparent calc(50% - 1px),var(--pageText),transparent calc(50% + 1px));
+      background: linear-gradient(
+          45deg,
+          transparent calc(50% - 1px),
+          var(--pageText),
+          transparent calc(50% + 1px)
+        ),
+        linear-gradient(
+          -45deg,
+          transparent calc(50% - 1px),
+          var(--pageText),
+          transparent calc(50% + 1px)
+        );
     }
   }
 }
