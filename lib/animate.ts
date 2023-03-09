@@ -79,7 +79,7 @@ const counterAnim = {
       when: "beforeChildren",
     },
   },
-  hide: (custom) => ({
+  hide: (custom: number) => ({
     y: `${-100 * custom}%`,
     transition: {
       duration: 0.5,
@@ -87,7 +87,7 @@ const counterAnim = {
       when: "afterChildren",
     },
   }),
-  hideR: (custom) => ({
+  hideR: (custom: number) => ({
     y: `${100 * custom}%`,
     transition: {
       duration: 0.5,

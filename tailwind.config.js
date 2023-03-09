@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   corePlugins: {
     preflight: false,
@@ -47,9 +49,9 @@ module.exports = {
       xl: "1600px",
     },
     colors: {
+      current: "currentColor",
       inherit: "inherit",
       transparent: "transparent",
-      current: "currentColor",
       black: "#000000",
       white: "#FFFFFF",
       pageBG: "var(--pageBG)",
@@ -110,5 +112,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };
