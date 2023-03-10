@@ -98,7 +98,15 @@
 }
 
 /* Focus Adjust */
-a,
+
+a {
+  color: var(--primaryBG);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 button,
 input,
 textarea,
@@ -180,18 +188,6 @@ h4,
 .is-h4 {
   &:not(:last-child) {
     @apply mb-24;
-  }
-}
-
-a {
-  .rc & {
-    &:not(.btn) {
-      @apply hover:opacity-40;
-      background-image: linear-gradient(var(--pageText), var(--pageText));
-      background-position: 0% 100%;
-      background-repeat: no-repeat;
-      background-size: 100% 1px;
-    }
   }
 }
 

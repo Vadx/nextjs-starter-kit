@@ -1,4 +1,4 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+// const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   corePlugins: {
@@ -54,6 +54,12 @@ module.exports = {
       transparent: "transparent",
       black: "#000000",
       white: "#FFFFFF",
+      primary: "var(--primaryBG)",
+      "primary-hover": "var(--primaryBGhover)",
+      secondary: "var(--secondaryBG)",
+      "secondary-hover": "var(--secondaryBGhover)",
+      danger: "var(--dangerBG)",
+      "danger-hover": "var(--dangerBGhover)",
       pageBG: "var(--pageBG)",
       pageText: "var(--pageText)",
     },

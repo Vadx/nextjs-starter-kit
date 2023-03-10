@@ -1,5 +1,4 @@
-/* Variables */
-:root {
+Variables :root {
   --black: #000000;
   --white: #ffffff;
 
@@ -17,6 +16,13 @@
   --pageBG: #000000;
   --pageText: #f4f4f0;
 
+  --primaryBG: #3490dc;
+  --primaryBGhover: #2481cc;
+  --secondaryBG: #ffed4a;
+  --secondaryBGhover: #eddc44;
+  --dangerBG: #e3342f;
+  --dangerBGhover: #d5302a;
+
   --pageBG-hsl: 0, 0%, 0%;
   --pageText-hsl: 60, 14%, 95%;
 }
@@ -24,6 +30,15 @@
 [data-theme="light"] {
   --pageBG: #ffffff;
   --pageText: #000000;
+
+  --primaryBG: #3490dc;
+  --primaryBGhover: #2481cc;
+
+  --secondaryBG: #ffed4a;
+  --secondaryBGhover: #eddc44;
+
+  --dangerBG: #e3342f;
+  --dangerBGhover: #d5302a;
 
   --pageBG-hsl: 0, 0%, 0%;
   --pageText-hsl: 2, 92%, 53%;

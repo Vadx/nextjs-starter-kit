@@ -5,6 +5,8 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   color?: "primary" | "secondary" | "danger";
   disabled?: boolean;
   size?: "small" | "medium" | "large";
+  customClass?: string;
+  onClick?: () => void;
 };
 
 const Button = ({
@@ -12,22 +14,28 @@ const Button = ({
   color = "primary",
   size = "medium",
   disabled = false,
+  customClass = "",
+  onClick,
   ...rest
 }: ButtonProps) => {
   let backgroundColor = "";
   let textColor = "";
 
   switch (color) {
+    case "primary":
+      backgroundColor = "bg-primary hover:bg-primary-hover";
+      textColor = "text-white";
+      break;
     case "secondary":
-      backgroundColor = "bg-gray-500 hover:bg-gray-600";
+      backgroundColor = "bg-secondary hover:bg-secondary-hover";
       textColor = "text-white";
       break;
     case "danger":
-      backgroundColor = "bg-red-500 hover:bg-red-600";
+      backgroundColor = "bg-danger hover:bg-danger-hover";
       textColor = "text-white";
       break;
     default:
-      backgroundColor = "bg-blue-500 hover:bg-blue-600";
+      backgroundColor = "bg-primary hover:bg-primary-hover";
       textColor = "text-white";
       break;
   }
@@ -50,7 +58,7 @@ const Button = ({
 
   return (
     <button
-      className={`font-semibold rounded-md ${sizeStyle} ${backgroundColor} ${textColor} ${
+      className={`font-semibold rounded-md ${customClass} ${sizeStyle} ${backgroundColor} ${textColor} ${
         disabled ? "opacity-50 cursor-not-allowed" : ""
       }`}
       disabled={disabled}
