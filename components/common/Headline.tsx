@@ -3,7 +3,6 @@ import React from "react";
 interface HeadlineProps {
   variant: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   align?: "center" | "inherit" | "justify" | "left" | "right";
-  tag?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span" | "div";
   className?: string;
   children: React.ReactNode;
 }
@@ -11,11 +10,10 @@ interface HeadlineProps {
 const Headline = ({
   variant = "h6",
   align = "inherit",
-  tag = variant,
   className = "",
   children,
 }: HeadlineProps) => {
-  let Tag: keyof JSX.IntrinsicElements = tag;
+  let Tag: keyof JSX.IntrinsicElements = variant;
 
   switch (variant) {
     case "h1":
