@@ -1,5 +1,6 @@
 import Layout from "@/components/app/Layout";
 import Button from "@/components/common/Button";
+import Headline from "@/components/common/Headline";
 import Head from "next/head";
 
 export default function Components() {
@@ -12,7 +13,7 @@ export default function Components() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="">
+        <div className="pb-40">
           <Button>Default Button</Button>
           <Button customClass="mr-10 ml-10" disabled>
             Disabled Button
@@ -26,10 +27,37 @@ export default function Components() {
           <Button customClass="mr-10" color="danger">
             Danger Button
           </Button>
-          <Button variant="outlined" customClass="mr-10" size="small">
+          <Button customClass="mr-10" size="small">
             Variant Button
           </Button>
           <Button size="large">Large Button</Button>
+        </div>
+
+        <div>
+          <Headline variant="h1">Title H1</Headline>
+          <Headline variant="h2">Title H2</Headline>
+          <Headline variant="h3">Title H3</Headline>
+          <Headline variant="h4">Title H4</Headline>
+          <Headline variant="h5">Title H5</Headline>
+          <Headline variant="h6">Title H6</Headline>
+          <Headline variant="h1" align="center">
+            Title H1 + align center
+          </Headline>
+          <Headline variant="h2" align="center">
+            Title H2 + align center
+          </Headline>
+          <Headline variant="h3" align="center">
+            Title H3 + align center
+          </Headline>
+          <Headline variant="h4" align="center">
+            Title H4 + align center
+          </Headline>
+          <Headline variant="h5" align="center">
+            Title H5 + align center
+          </Headline>
+          <Headline variant="h6" align="center">
+            Title H6 + align center
+          </Headline>
         </div>
       </main>
     </Layout>

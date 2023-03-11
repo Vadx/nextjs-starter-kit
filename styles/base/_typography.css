@@ -33,35 +33,6 @@
     @apply list-none m-0 p-0;
   }
 
-  /* Headlines */
-  h1,
-  .is-h1 {
-    @apply m-0 text-48 font-normal leading-125;
-  }
-
-  h2,
-  .is-h2 {
-    @apply m-0 text-36 font-normal leading-125;
-  }
-
-  h3,
-  .is-h3 {
-    @apply m-0 text-30 font-normal leading-125;
-  }
-
-  h4,
-  .is-h4 {
-    @apply m-0 text-24 font-normal leading-135;
-  }
-
-  h5 {
-    @apply m-0 text-20 font-normal leading-125;
-  }
-
-  h6 {
-    @apply m-0 text-14 font-normal leading-125;
-  }
-
   /* Links */
   a {
     @apply no-underline text-current;
@@ -148,46 +119,6 @@ ul {
         @apply inline-block relative -ml-4 w-4;
       }
     }
-  }
-}
-
-h1,
-.is-h1 {
-  &:not(:last-child) {
-    @apply mb-16;
-  }
-
-  &.has-btn {
-    @apply flex flex-col items-start sm:flex-row sm:items-center;
-
-    .btn {
-      @apply mt-4 sm:mt-0 sm:ml-4;
-    }
-  }
-
-  .hero & {
-    font-size: clamp(4rem, calc(1.5rem + 3.5vw), 15rem);
-  }
-}
-
-h2,
-.is-h2 {
-  &:not(:last-child) {
-    @apply mb-16;
-  }
-}
-
-h3,
-.is-h3 {
-  &:not(:last-child) {
-    @apply mb-16;
-  }
-}
-
-h4,
-.is-h4 {
-  &:not(:last-child) {
-    @apply mb-24;
   }
 }
 
