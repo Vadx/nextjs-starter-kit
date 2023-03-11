@@ -8,13 +8,13 @@ interface HeadlineProps {
   children: React.ReactNode;
 }
 
-const Headline: React.FC<HeadlineProps> = ({
+const Headline = ({
   variant = "h6",
   align = "inherit",
   tag = variant,
   className = "",
   children,
-}) => {
+}: HeadlineProps) => {
   let Tag: keyof JSX.IntrinsicElements = tag;
 
   switch (variant) {
