@@ -40,6 +40,6 @@ Variables :root {
   --dangerBG: #e3342f;
   --dangerBGhover: #d5302a;
 
-  --pageBG-hsl: 0, 0%, 0%;
-  --pageText-hsl: 2, 92%, 53%;
+  --pageBG-hsl: 60, 14%, 95%;
+  --pageText-hsl: 0, 0%, 0%;
 }
