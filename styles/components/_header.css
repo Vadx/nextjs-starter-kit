@@ -1,9 +1,9 @@
 .header {
-  @apply sticky top-0 inset-x-0 z-5;
+  @apply sticky inset-x-0 top-0 z-5;
   background-color: var(--pageBG);
 
   &--inner {
-    @apply flex h-42 max-w-screen-xl items-center justify-between;
+    @apply flex items-center justify-between max-w-screen-xl h-42;
   }
 
   nav {
@@ -14,13 +14,13 @@
 }
 
 .logo {
-  @apply flex flex-col relative z-1;
+  @apply relative flex flex-col z-1;
 
   &--link {
-    @apply clean-btn block p-8 bg-transparent;
+    @apply block p-8 bg-transparent clean-btn;
 
     svg {
-      @apply block fill-current w-auto h-48;
+      @apply block w-auto h-48 fill-current;
     }
   }
 }

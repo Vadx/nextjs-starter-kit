@@ -1,6 +1,7 @@
 import Layout from "@/components/app/Layout";
 import Button from "@/components/common/Button";
 import Headline from "@/components/common/Headline";
+import LinearProgress from "@/components/common/LinearProgress";
 import Head from "next/head";
 
 export default function Components() {
@@ -13,6 +14,7 @@ export default function Components() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <LinearProgress />
         <div className="pb-40">
           <Button>Default Button</Button>
           <Button customClass="mr-10 ml-10" disabled>

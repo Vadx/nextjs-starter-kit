@@ -12,5 +12,4 @@
 @import "components/_header";
 @import "components/_footer";
 @import "components/_theme-switch";
-
-/* @import '_shame'; */
+@import "components/_liner-progress";

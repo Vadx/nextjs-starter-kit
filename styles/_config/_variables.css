@@ -1,12 +1,12 @@
 Variables :root {
-  --black: #000000;
-  --white: #ffffff;
+  --black: rgb(0 0 0);
+  --white: rgb(255 255 255);
 
   --black-hsl: 0, 0%, 0%;
   --white-hsl: 0, 0%, 100%;
 
   --pageBG: #f4f4f0;
-  --pageText: #000000;
+  --pageText: rgb(0 0 0);
 
   --pageBG-hsl: 60, 14%, 95%;
   --pageText-hsl: 0, 0%, 0%;
@@ -16,29 +16,27 @@ Variables :root {
   --pageBG: #000000;
   --pageText: #f4f4f0;
 
-  --primaryBG: #3490dc;
-  --primaryBGhover: #2481cc;
-  --secondaryBG: #ffed4a;
-  --secondaryBGhover: #eddc44;
-  --dangerBG: #e3342f;
-  --dangerBGhover: #d5302a;
+  --primaryBG: rgb(12 74 110);
+  --primaryBGhover: rgb(8 47 73);
+  --secondaryBG: rgb(253 224 71);
+  --secondaryBGhover: rgb(250 204 21);
+  --dangerBG: rgb(190 18 60);
+  --dangerBGhover: rgb(159 18 57);
 
   --pageBG-hsl: 0, 0%, 0%;
   --pageText-hsl: 60, 14%, 95%;
 }
 
 [data-theme="light"] {
-  --pageBG: #ffffff;
-  --pageText: #000000;
+  --pageBG: rgb(255 255 255);
+  --pageText: rgb(0 0 0);
 
-  --primaryBG: #3490dc;
-  --primaryBGhover: #2481cc;
-
-  --secondaryBG: #ffed4a;
-  --secondaryBGhover: #eddc44;
-
-  --dangerBG: #e3342f;
-  --dangerBGhover: #d5302a;
+  --primaryBG: rgb(12 74 110);
+  --primaryBGhover: rgb(8 47 73);
+  --secondaryBG: rgb(253 224 71);
+  --secondaryBGhover: rgb(250 204 21);
+  --dangerBG: rgb(190 18 60);
+  --dangerBGhover: rgb(159 18 57);
 
   --pageBG-hsl: 60, 14%, 95%;
   --pageText-hsl: 0, 0%, 0%;

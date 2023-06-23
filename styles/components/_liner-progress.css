@@ -1,0 +1,15 @@
+@keyframes progressAnimation {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.liner-wrap {
+  @apply overflow-hidden relative h-[4px];
+}
+.liner-item {
+  @apply h-full transition-[background-color,transform] duration-300 bg-primary absolute will-change-[left] min-w-[50%] animate-[1s_ease_0s_infinite_normal_none_running_progressAnimation];
+}
