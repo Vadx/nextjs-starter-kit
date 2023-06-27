@@ -9,7 +9,8 @@
 
 .liner-wrap {
   @apply overflow-hidden relative h-[4px];
+  background: hsla(var(--pageText-hsl), 0.07);
 }
 .liner-item {
-  @apply h-full transition-[background-color,transform] duration-300 bg-primary absolute will-change-[left] min-w-[50%] animate-[1s_ease_0s_infinite_normal_none_running_progressAnimation];
+  @apply z-10 h-full transition-[background-color,transform] duration-300 bg-primary absolute will-change-[left] min-w-[50%] animate-[1s_ease_0s_infinite_normal_none_running_progressAnimation];
 }
